@@ -11,3 +11,21 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bd-example {
+    display: grid;
+}
+
+.navbar-collapse {
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    padding-right: 100px;
+    font-family: "Poppins", sans-serif;
+    color: #556270;
+    font-size: 17px;
+}
+
+.floating1 {
+    padding-left: 65px;
+}
