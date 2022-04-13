@@ -29,3 +29,9 @@ html {
 .floating1 {
     padding-left: 65px;
 }
+
+.Nav-title {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
