@@ -23,6 +23,10 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     
+    .nav-link>a:hover {
+        color: #ffa908;
+    }
+    
     .navbar-collapse {
         align-content: flex-end;
         flex-wrap: wrap;
@@ -99,9 +103,9 @@
     }
     
     footer {
-        height: 500px;
+        height: 300px;
         width: 100%;
-        background-color: #8f8f8f;
+        background-color: #515d6a;
     }
     
     .column {
@@ -133,4 +137,83 @@
         padding: 16px;
         text-align: center;
         background-color: #f1f1f1;
+    }
+    
+    .forMe {
+        color: #ffffff;
+    }
+    
+    .services2 {
+        color: #ffffff;
+        margin-left: 50px;
+    }
+    
+    .navigation {
+        margin-left: 50px;
+        color: #ffffff;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #dadada;
+    }
+    
+    li {
+        margin-top: 10px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .titles {
+        margin-left: 8px;
+    }
+    
+    .hyperlinks {
+        width: 35px;
+        height: 35px;
+        background: rgba(255, 255, 255, 0.1);
+        margin-right: 8px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        border-radius: 3px;
+        font-size: 20px;
+    }
+    
+    .hyperlinks:hover {
+        background-color: #ffa908;
+        cursor: pointer;
+    }
+    
+    .txtBox {
+        margin: 0;
+        width: 300px;
+        height: 38px;
+        margin-left: 8px;
+    }
+    
+    .projects-button {
+        margin-left: 0;
+        background-color: #ffa908;
+        width: 200px;
+        height: 40px;
+        align-items: center;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    .projects-button:hover {
+        color: #ffffff;
+        background-color: #ffb223;
+    }
+    
+    .button {
+        margin-left: 0;
+        background-color: #ffa908;
+        width: 200px;
+        height: 40px;
+        align-items: center;
     }
