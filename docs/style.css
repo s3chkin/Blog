@@ -23,7 +23,12 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     }
     
-    .nav-link>a:hover {
+    .collapse {
+        margin-top: 15px;
+        transition: ease-in-out 0.1s;
+    }
+    
+    .disabled1 {
         color: #ffa908;
     }
     
@@ -35,6 +40,10 @@
         font-family: "Poppins", sans-serif;
         color: #556270;
         font-size: 17px;
+    }
+    
+    .navigation-links:hover {
+        color: #ffa908;
     }
     
     .floating1 {
@@ -217,3 +226,23 @@
         height: 40px;
         align-items: center;
     }
+    /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
+    
+    .resp-image {
+        padding-left: 45px;
+        padding-right: 45px;
+        /* width: 100%;
+        height: auto; */
+        max-width: 100%;
+        height: auto;
+    }
+    
+    @media only screen and (max-width:530px) {
+        .resp-image {
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+            height: auto;
+        }
+    }
+    /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
