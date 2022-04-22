@@ -25,7 +25,7 @@
     
     .collapse {
         margin-top: 15px;
-        transition: ease-in-out 0.1s;
+        transition: ease-in-out 1s;
     }
     
     .disabled1 {
