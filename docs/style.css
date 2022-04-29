@@ -246,3 +246,10 @@
         }
     }
     /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
+    /* CONTACT */
+    
+    .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
+    .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+        background-color: rgba(255, 0, 0, 0);
+    }
+    /* CONTACT */
