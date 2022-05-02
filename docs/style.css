@@ -70,7 +70,8 @@
         margin-right: 25px;
     }
     
-    .services-container {
+    .services-container,
+    .services-container-responsive {
         margin-left: 10px;
         margin-right: 25px;
     }
@@ -86,6 +87,29 @@
         margin-left: 15px;
         padding-top: 25px;
         padding-left: 25px;
+    }
+    
+    #resp-serv {
+        display: none;
+    }
+    
+    @media screen and (max-width: 1156px) {
+        .services {
+            height: auto;
+        }
+        .logo1-title {
+            font-size: 19px;
+            margin-top: 20px;
+        }
+    }
+    
+    @media screen and (max-width: 730px) {
+        #resp-serv {
+            display: block;
+        }
+        #serv {
+            display: none;
+        }
     }
     
     .bi-briefcase,
