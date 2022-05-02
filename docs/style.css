@@ -298,3 +298,151 @@
         cursor: pointer;
     }
     /* CONTACT */
+    
+    @media only screen and (max-width:1245px) {
+        .navigation,
+        .forMe,
+        .services2 {
+            margin-left: 10px;
+        }
+        .txtBox {
+            width: 250px;
+        }
+    }
+    
+    .responsiveFooter {
+        display: none;
+    }
+    
+    @media only screen and (max-width:1135px) {
+        .normal-footer {
+            display: none;
+        }
+        .responsiveFooter {
+            display: block;
+        }
+        footer {
+            height: auto;
+        }
+    }
+    
+    #txtBoxResp {
+        width: 100px;
+    }
+    
+    #services2Resp {
+        margin-left: 30px;
+    }
+    
+    #buttonResp {
+        width: 110px;
+        font-size: 14px;
+    }
+    
+    #forMeResp {
+        margin-right: 80px;
+    }
+    
+    #footer2 {
+        margin-left: 96px;
+    }
+    
+    #respBuletin {
+        margin-left: 120px;
+    }
+    
+    .responsiveFooter {
+        margin-right: 80px;
+    }
+    
+    .responsiveFooter2 {
+        display: none;
+    }
+    
+    @media only screen and (max-width:765px) {
+        .responsiveFooter2 {
+            display: block;
+        }
+        .normal-footer {
+            display: none;
+        }
+        .responsiveFooter {
+            display: none;
+        }
+        footer {
+            height: auto;
+        }
+        #services2Resp {
+            margin: 0;
+        }
+        .services2 {
+            margin: 0;
+        }
+        #footer2 {
+            margin: 0;
+        }
+        #respBuletin {
+            margin: 0;
+        }
+        .navigation {
+            margin: 0;
+        }
+        .responsiveFooter2 {
+            margin-left: 100px;
+        }
+        #txtBoxResp {
+            margin: 0;
+            width: 300px;
+            height: 38px;
+            margin-left: 8px;
+        }
+        .buttonResp {
+            margin-left: 0;
+            background-color: #ffa908;
+            width: 200px;
+            height: 40px;
+            align-items: center;
+        }
+    }
+    
+    @media only screen and (max-width:640px) {
+        .normal-footer {
+            display: none;
+        }
+        .responsiveFooter {
+            display: none;
+        }
+        footer {
+            height: auto;
+        }
+        #services2Resp {
+            margin: 0;
+        }
+        .services2 {
+            margin: 0;
+        }
+        #footer2 {
+            margin: 0;
+        }
+        #respBuletin {
+            margin: 0;
+        }
+        .navigation {
+            margin: 0;
+        }
+        .responsiveFooter2 {
+            margin-left: 0px;
+        }
+    }
+    
+    @media only screen and (max-width:430px) {
+        .normal-footer {
+            display: none;
+        }
+        .responsiveFooter {
+            display: none;
+        }
+        #txtBoxResp {
+            width: 195px;
+        }
+    }
