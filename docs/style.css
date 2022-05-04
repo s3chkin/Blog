@@ -16,7 +16,91 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
     }
+    /* FADE IN DOWN ANIMATION EFFECT ---1  */
+    
+    #list {
+        list-style: none;
+    }
+    
+    #list li {
+        text-align: center;
+        /* line-height: 50px; */
+        opacity: 0;
+        font-size: 40px;
+        color: #dadada;
+        font-weight: 700;
+    }
+    
+    #list li:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    
+    #list li:nth-child(3) {
+        animation-delay: 1s;
+    }
+    
+    #list li:nth-child(4) {
+        animation-delay: 2s;
+    }
+    
+    #list li:nth-child(5) {
+        animation-delay: 3s;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translate3d(0, -50%, 0);
+        }
+        to {
+            opacity: 1;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    /* FADE IN DOWN ANIMATION EFFECT ---2 */
+    /* FADE IN UP ANIMATION EFFECT ---1 */
+    
+    .imgButton {
+        background-color: #ff7300;
+        width: 200px;
+        height: 45px;
+        color: white;
+        align-content: center;
+        display: grid;
+        border-radius: 8px;
+    }
+    
+    .imgButton:hover {
+        background-color: #ff8800;
+    }
+    
+    .box {
+        text-align: center;
+        /* line-height: 90px; */
+        color: #dadada;
+        font-size: 17px;
+    }
+    
+    .fadeInUp {
+        animation: fadeInUp 1s ease backwards;
+    }
+    
+    @keyframes fadeInUp {
+        0% {
+            transform: translate(0px, 100px);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0px, 0);
+            opacity: 1;
+        }
+    }
+    /* FADE IN UP ANIMATION EFFECT ---2 */
     
     .bd-example {
         display: grid;
