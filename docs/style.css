@@ -293,6 +293,12 @@
                 margin-top: 10px;
             }
             
+            dl,
+            ol,
+            ul {
+                list-style: none;
+            }
+            
             a:hover {
                 text-decoration: none;
                 color: #ffffff;
@@ -358,6 +364,17 @@
         height: auto; */
                 max-width: 100%;
                 height: auto;
+            }
+            
+            ol,
+            ul {
+                padding-left: 1rem;
+            }
+            
+            .bi-chevron-right {
+                font-size: 12px;
+                color: #dadada;
+                margin-right: 5px;
             }
             
             @media only screen and (max-width:530px) {
