@@ -344,9 +344,10 @@
             .button {
                 margin-left: 0;
                 background-color: #ffa908;
-                width: 200px;
+                width: 198px;
                 height: 40px;
                 align-items: center;
+                border: none;
             }
             /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
             
