@@ -1,588 +1,639 @@
-            * {
-                transition: ease-in-out 0.09s;
-            }
-            
-            body,
-            html {
-                height: 100%;
-                margin: 0;
-                font-family: "Open Sans", sans-serif;
-                color: #444444;
-            }
-            
-            .bg {
-                background-image: url("./images/bgimg.jpg");
-                height: 100%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                display: grid;
-                justify-items: center;
-                align-items: center;
-                align-content: center;
-            }
-            /* FADE IN DOWN ANIMATION EFFECT ---1  */
-            
-            #list {
-                list-style: none;
-            }
-            
-            #list li {
-                text-align: center;
-                /* line-height: 50px; */
-                opacity: 0;
-                font-size: 40px;
-                color: #dadada;
-                font-weight: 700;
-            }
-            
-            #list li:nth-child(2) {
-                animation-delay: 0.5s;
-            }
-            
-            #list li:nth-child(3) {
-                animation-delay: 1s;
-            }
-            
-            #list li:nth-child(4) {
-                animation-delay: 2s;
-            }
-            
-            #list li:nth-child(5) {
-                animation-delay: 3s;
-            }
-            
-            @keyframes fadeIn {
-                from {
-                    opacity: 0;
-                    transform: translate3d(0, -50%, 0);
-                }
-                to {
-                    opacity: 1;
-                    transform: translate3d(0, 0, 0);
-                }
-            }
-            /* FADE IN DOWN ANIMATION EFFECT ---2 */
-            /* FADE IN UP ANIMATION EFFECT ---1 */
-            
-            .imgButton {
-                background-color: #ff7300;
-                width: 200px;
-                height: 45px;
-                color: white;
-                align-content: center;
-                display: grid;
-                border-radius: 8px;
-            }
-            
-            .imgButton:hover {
-                background-color: #ff8800;
-            }
-            
-            .box {
-                text-align: center;
-                /* line-height: 90px; */
-                color: #dadada;
-                font-size: 17px;
-            }
-            
-            .fadeInUp {
-                animation: fadeInUp 1s ease backwards;
-            }
-            
-            @keyframes fadeInUp {
-                0% {
-                    transform: translate(0px, 100px);
-                    opacity: 0;
-                }
-                100% {
-                    transform: translate(0px, 0);
-                    opacity: 1;
-                }
-            }
-            /* FADE IN UP ANIMATION EFFECT ---2 */
-            
-            .bd-example {
-                display: grid;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            }
-            
-            .collapse {
-                margin-top: 15px;
-                transition: ease-in-out 1s;
-            }
-            
-            .disabled1 {
-                color: #ff9900;
-            }
-            
-            .navbar-collapse {
-                align-content: flex-end;
-                flex-wrap: wrap;
-                flex-direction: column-reverse;
-                padding-right: 100px;
-                font-family: "Poppins", sans-serif;
-                color: #556270;
-                font-size: 17px;
-            }
-            
-            .navigation-links:hover {
-                color: #ffa908;
-            }
-            
-            .floating1 {
-                padding-left: 65px;
-            }
-            
-            .Nav-title {
-                font-size: 28px;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-            
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                font-family: "Raleway", sans-serif;
-            }
-            
-            .me {
-                margin-left: 25px;
-                margin-right: 25px;
-            }
-            
-            .services-container,
-            .services-container-responsive {
-                margin-left: 10px;
-                margin-right: 25px;
-            }
-            
-            .services:hover {
-                color: #ffa908;
-            }
-            
-            .services {
-                width: 600px;
-                height: 120px;
-                background-color: #ebebeb;
-                margin-left: 15px;
-                padding-top: 25px;
-                padding-left: 25px;
-            }
-            
-            #resp-serv {
-                display: none;
-            }
-            
-            @media screen and (max-width: 1156px) {
-                .services {
-                    height: auto;
-                }
-                .logo1-title {
-                    font-size: 19px;
-                    margin-top: 20px;
-                }
-            }
-            
-            @media screen and (max-width: 730px) {
-                #resp-serv {
-                    display: block;
-                }
-                #serv {
-                    display: none;
-                }
-            }
-            
-            .bi-briefcase,
-            .bi-easel {
-                color: #ffa908;
-                font-size: 50px;
-            }
-            
-            .logo1-title {
-                padding-top: 3px;
-                margin-left: 12px;
-                font-size: 18px;
-            }
-            
-            .logo1-text {
-                margin-left: 12px;
-            }
-            
-            .projects {
-                width: 350px;
-                height: 500px;
-                background-color: #ffa908;
-                margin-left: 15px;
-            }
-            
-            footer {
-                height: 300px;
-                width: 100%;
-                background-color: #515d6a;
-            }
-            
-            .column {
-                float: left;
-                width: 25%;
-                padding: 0 10px;
-            }
-            
-            .column2 {
-                float: left;
-                width: 40%;
-                padding: 0 10px;
-            }
-            
-            .row {
-                margin: 0;
-            }
-            
-            .row:after {
-                content: "";
-                display: table;
-                clear: both;
-            }
-            
-            @media screen and (max-width: 965px) {
-                .column {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
-                }
-            }
-            
-            @media screen and (max-width: 770px) {
-                .column2 {
-                    width: 100%;
-                    display: block;
-                    margin-bottom: 20px;
-                }
-            }
-            
-            .card {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                padding: 16px;
-                text-align: center;
-                background-color: #f1f1f1;
-            }
-            
-            .forMe {
-                color: #ffffff;
-            }
-            
-            .services2 {
-                color: #ffffff;
-                margin-left: 50px;
-            }
-            
-            .navigation {
-                margin-left: 50px;
-                color: #ffffff;
-            }
-            
-            a {
-                text-decoration: none;
-                color: #dadada;
-            }
-            
-            li {
-                margin-top: 10px;
-            }
-            
-            dl,
-            ol,
-            ul {
-                list-style: none;
-            }
-            
-            a:hover {
-                text-decoration: none;
-                color: #ffffff;
-            }
-            
-            .titles {
-                margin-left: 8px;
-            }
-            
-            .hyperlinks {
-                width: 35px;
-                height: 35px;
-                background: rgba(255, 255, 255, 0.1);
-                margin-right: 8px;
-                display: grid;
-                justify-items: center;
-                align-items: center;
-                border-radius: 3px;
-                font-size: 20px;
-            }
-            
-            .hyperlinks:hover {
-                background-color: #ffa908;
-                cursor: pointer;
-            }
-            
-            .txtBox {
-                margin: 0;
-                width: 300px;
-                height: 38px;
-                margin-left: 8px;
-            }
-            
-            .projects-button {
-                margin-left: 0;
-                background-color: #ffa908;
-                width: 200px;
-                height: 40px;
-                align-items: center;
-                border: none;
-                border-radius: 10px;
-            }
-            
-            .projects-button:hover {
-                color: #ffffff;
-                background-color: #ffb223;
-            }
-            
-            .button {
-                margin-left: 0;
-                background-color: #ffa908;
-                width: 200px;
-                height: 38px;
-                align-items: center;
-                border: none;
-            }
-            /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
-            
-            .resp-image {
-                padding-left: 45px;
-                padding-right: 45px;
-                /* width: 100%;
-        height: auto; */
-                max-width: 100%;
-                height: auto;
-            }
-            
-            ol,
-            ul {
-                padding-left: 1rem;
-            }
-            
-            .bi-chevron-right {
-                font-size: 12px;
-                color: #dadada;
-                margin-right: 5px;
-            }
-            
-            @media only screen and (max-width:530px) {
-                .resp-image {
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            
-            @media only screen and (max-width:530px) {
-                .resp-image {
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            
-            @media only screen and (max-width:991px) {
-                .navbar-nav {
-                    background-color: #ffffff;
-                    width: 100%;
-                }
-            }
-            /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
-            /* CONTACT */
-            
-            .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
-            .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
-                background-color: rgba(255, 0, 0, 0);
-            }
-            
-            .fa-map-marker-alt:hover {
-                color: #ffa908;
-                cursor: pointer;
-            }
-            
-            .fa-phone:hover {
-                color: #ffa908;
-                cursor: pointer;
-            }
-            
-            .fa-envelope:hover {
-                color: #ffa908;
-                cursor: pointer;
-            }
-            /* CONTACT */
-            
-            @media only screen and (max-width:1245px) {
-                .navigation,
-                .forMe,
-                .services2 {
-                    margin-left: 10px;
-                }
-                .txtBox {
-                    width: 250px;
-                }
-            }
-            
-            .responsiveFooter {
-                display: none;
-            }
-            
-            @media only screen and (max-width:1135px) {
-                .normal-footer {
-                    display: none;
-                }
-                .responsiveFooter {
-                    display: block;
-                }
-                footer {
-                    height: auto;
-                }
-            }
-            
-            #txtBoxResp {
-                width: 100px;
-            }
-            
-            #services2Resp {
-                margin-left: 30px;
-            }
-            
-            #buttonResp {
-                width: 110px;
-                font-size: 14px;
-            }
-            
-            #forMeResp {
-                margin-right: 80px;
-            }
-            
-            #footer2 {
-                margin-left: 96px;
-            }
-            
-            #respBuletin {
-                margin-left: 120px;
-            }
-            
-            .responsiveFooter {
-                margin-right: 80px;
-            }
-            
-            .responsiveFooter2 {
-                display: none;
-            }
-            
-            @media only screen and (max-width:765px) {
-                .responsiveFooter2 {
-                    display: block;
-                }
-                .normal-footer {
-                    display: none;
-                }
-                .responsiveFooter {
-                    display: none;
-                }
-                footer {
-                    height: auto;
-                }
-                #services2Resp {
-                    margin: 0;
-                }
-                .services2 {
-                    margin: 0;
-                }
-                #footer2 {
-                    margin: 0;
-                }
-                #respBuletin {
-                    margin: 0;
-                    padding-bottom: 20px;
-                }
-                .navigation {
-                    margin: 0;
-                }
-                .responsiveFooter2 {
-                    margin-left: 100px;
-                }
-                #txtBoxResp {
-                    margin: 0;
-                    width: 300px;
-                    height: 38px;
-                    margin-left: 8px;
-                }
-                .buttonResp {
-                    margin-left: 0;
-                    background-color: #ffa908;
-                    width: 200px;
-                    height: 40px;
-                    align-items: center;
-                }
-                #respBuletin {
-                    padding-bottom: 20px;
-                }
-            }
-            
-            @media only screen and (max-width: 765px) {
-                #respBuletin {
-                    margin: 0;
-                    padding-bottom: 15px;
-                }
-            }
-            
-            @media only screen and (max-width:640px) {
-                #respBuletin {
-                    padding-bottom: 20px;
-                }
-                .normal-footer {
-                    display: none;
-                }
-                .responsiveFooter {
-                    display: none;
-                }
-                footer {
-                    height: auto;
-                }
-                #services2Resp {
-                    margin: 0;
-                }
-                .services2 {
-                    margin: 0;
-                }
-                #footer2 {
-                    margin: 0;
-                }
-                #respBuletin {
-                    margin: 0;
-                }
-                .navigation {
-                    margin: 0;
-                }
-                .responsiveFooter2 {
-                    margin-left: 0px;
-                }
-            }
-            
-            @media only screen and (max-width:430px) {
-                .normal-footer {
-                    display: none;
-                }
-                .responsiveFooter {
-                    display: none;
-                }
-                #txtBoxResp {
-                    width: 195px;
-                }
-            }
+                                                    * {
+                                                        transition: ease-in-out 0.09s;
+                                                    }
+                                                    
+                                                    body,
+                                                    html {
+                                                        height: 100%;
+                                                        margin: 0;
+                                                        font-family: "Open Sans", sans-serif;
+                                                        color: #444444;
+                                                    }
+                                                    
+                                                    .bg {
+                                                        background-image: url("./images/bgimg.jpg");
+                                                        height: 100%;
+                                                        background-position: center;
+                                                        background-repeat: no-repeat;
+                                                        background-size: cover;
+                                                        display: grid;
+                                                        justify-items: center;
+                                                        align-items: center;
+                                                        align-content: center;
+                                                    }
+                                                    /* FADE IN DOWN ANIMATION EFFECT ---1  */
+                                                    
+                                                    #list {
+                                                        list-style: none;
+                                                    }
+                                                    
+                                                    #list li {
+                                                        text-align: center;
+                                                        /* line-height: 50px; */
+                                                        opacity: 0;
+                                                        font-size: 40px;
+                                                        color: #dadada;
+                                                        font-weight: 700;
+                                                    }
+                                                    
+                                                    #list li:nth-child(2) {
+                                                        animation-delay: 0.5s;
+                                                    }
+                                                    
+                                                    #list li:nth-child(3) {
+                                                        animation-delay: 1s;
+                                                    }
+                                                    
+                                                    #list li:nth-child(4) {
+                                                        animation-delay: 2s;
+                                                    }
+                                                    
+                                                    #list li:nth-child(5) {
+                                                        animation-delay: 3s;
+                                                    }
+                                                    
+                                                    @keyframes fadeIn {
+                                                        from {
+                                                            opacity: 0;
+                                                            transform: translate3d(0, -50%, 0);
+                                                        }
+                                                        to {
+                                                            opacity: 1;
+                                                            transform: translate3d(0, 0, 0);
+                                                        }
+                                                    }
+                                                    /* FADE IN DOWN ANIMATION EFFECT ---2 */
+                                                    /* FADE IN UP ANIMATION EFFECT ---1 */
+                                                    
+                                                    .imgButton {
+                                                        background-color: #ff7300;
+                                                        width: 200px;
+                                                        height: 45px;
+                                                        color: white;
+                                                        align-content: center;
+                                                        display: grid;
+                                                        border-radius: 8px;
+                                                    }
+                                                    
+                                                    .imgButton:hover {
+                                                        background-color: #ff8800;
+                                                    }
+                                                    
+                                                    .box {
+                                                        text-align: center;
+                                                        /* line-height: 90px; */
+                                                        color: #dadada;
+                                                        font-size: 17px;
+                                                    }
+                                                    
+                                                    .fadeInUp {
+                                                        animation: fadeInUp 1s ease backwards;
+                                                    }
+                                                    
+                                                    @keyframes fadeInUp {
+                                                        0% {
+                                                            transform: translate(0px, 100px);
+                                                            opacity: 0;
+                                                        }
+                                                        100% {
+                                                            transform: translate(0px, 0);
+                                                            opacity: 1;
+                                                        }
+                                                    }
+                                                    /* FADE IN UP ANIMATION EFFECT ---2 */
+                                                    
+                                                    .bd-example {
+                                                        display: grid;
+                                                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                    }
+                                                    
+                                                    .collapse {
+                                                        margin-top: 15px;
+                                                        transition: ease-in-out 1s;
+                                                    }
+                                                    
+                                                    .disabled1 {
+                                                        color: #ff9900;
+                                                    }
+                                                    
+                                                    .navbar-collapse {
+                                                        align-content: flex-end;
+                                                        flex-wrap: wrap;
+                                                        flex-direction: column-reverse;
+                                                        padding-right: 100px;
+                                                        font-family: "Poppins", sans-serif;
+                                                        color: #556270;
+                                                        font-size: 17px;
+                                                    }
+                                                    
+                                                    .navigation-links:hover {
+                                                        color: #ffa908;
+                                                    }
+                                                    
+                                                    .floating1 {
+                                                        padding-left: 65px;
+                                                    }
+                                                    
+                                                    .Nav-title {
+                                                        font-size: 28px;
+                                                        font-weight: 700;
+                                                        text-transform: uppercase;
+                                                    }
+                                                    
+                                                    h1,
+                                                    h2,
+                                                    h3,
+                                                    h4,
+                                                    h5,
+                                                    h6 {
+                                                        font-family: "Raleway", sans-serif;
+                                                    }
+                                                    
+                                                    .me {
+                                                        margin-left: 25px;
+                                                        margin-right: 25px;
+                                                    }
+                                                    
+                                                    .services-container,
+                                                    .services-container-responsive {
+                                                        margin-left: 10px;
+                                                        margin-right: 25px;
+                                                    }
+                                                    
+                                                    .services:hover {
+                                                        color: #ffa908;
+                                                    }
+                                                    
+                                                    .services {
+                                                        width: 600px;
+                                                        height: 120px;
+                                                        background-color: #ebebeb;
+                                                        margin-left: 15px;
+                                                        padding-top: 25px;
+                                                        padding-left: 25px;
+                                                    }
+                                                    
+                                                    #resp-serv {
+                                                        display: none;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 1156px) {
+                                                        .services {
+                                                            height: auto;
+                                                        }
+                                                        .logo1-title {
+                                                            font-size: 19px;
+                                                            margin-top: 20px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 730px) {
+                                                        #resp-serv {
+                                                            display: block;
+                                                        }
+                                                        #serv {
+                                                            display: none;
+                                                        }
+                                                    }
+                                                    
+                                                    .bi-briefcase,
+                                                    .bi-easel {
+                                                        color: #ffa908;
+                                                        font-size: 50px;
+                                                    }
+                                                    
+                                                    .logo1-title {
+                                                        padding-top: 3px;
+                                                        margin-left: 12px;
+                                                        font-size: 18px;
+                                                    }
+                                                    
+                                                    .logo1-text {
+                                                        margin-left: 12px;
+                                                    }
+                                                    
+                                                    .projects {
+                                                        width: 350px;
+                                                        height: 500px;
+                                                        background-color: #ffa908;
+                                                        margin-left: 15px;
+                                                    }
+                                                    
+                                                    footer {
+                                                        height: 300px;
+                                                        width: 100%;
+                                                        background-color: #515d6a;
+                                                    }
+                                                    
+                                                    .column {
+                                                        float: left;
+                                                        width: 25%;
+                                                        padding: 0 10px;
+                                                    }
+                                                    
+                                                    .column2 {
+                                                        float: left;
+                                                        width: 40%;
+                                                        padding: 0 10px;
+                                                    }
+                                                    
+                                                    .row {
+                                                        margin: 0;
+                                                    }
+                                                    
+                                                    .row:after {
+                                                        content: "";
+                                                        display: table;
+                                                        clear: both;
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 965px) {
+                                                        .column {
+                                                            width: 100%;
+                                                            display: block;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media screen and (max-width: 770px) {
+                                                        .column2 {
+                                                            width: 100%;
+                                                            display: block;
+                                                            margin-bottom: 20px;
+                                                        }
+                                                    }
+                                                    
+                                                    .card {
+                                                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                                                        padding: 16px;
+                                                        text-align: center;
+                                                        background-color: #f1f1f1;
+                                                    }
+                                                    
+                                                    .forMe {
+                                                        color: #ffffff;
+                                                    }
+                                                    
+                                                    .services2 {
+                                                        color: #ffffff;
+                                                        margin-left: 50px;
+                                                    }
+                                                    
+                                                    .navigation {
+                                                        margin-left: 50px;
+                                                        color: #ffffff;
+                                                    }
+                                                    
+                                                    a {
+                                                        text-decoration: none;
+                                                        color: #dadada;
+                                                    }
+                                                    
+                                                    li {
+                                                        margin-top: 10px;
+                                                    }
+                                                    
+                                                    dl,
+                                                    ol,
+                                                    ul {
+                                                        list-style: none;
+                                                    }
+                                                    
+                                                    a:hover {
+                                                        text-decoration: none;
+                                                        color: #ffffff;
+                                                    }
+                                                    
+                                                    .titles {
+                                                        margin-left: 8px;
+                                                    }
+                                                    
+                                                    .hyperlinks {
+                                                        width: 35px;
+                                                        height: 35px;
+                                                        background: rgba(255, 255, 255, 0.1);
+                                                        margin-right: 8px;
+                                                        display: grid;
+                                                        justify-items: center;
+                                                        align-items: center;
+                                                        border-radius: 3px;
+                                                        font-size: 20px;
+                                                    }
+                                                    
+                                                    .hyperlinks:hover {
+                                                        background-color: #ffa908;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .txtBox {
+                                                        margin: 0;
+                                                        width: 300px;
+                                                        height: 38px;
+                                                        margin-left: 8px;
+                                                    }
+                                                    
+                                                    .projects-button {
+                                                        margin-left: 0;
+                                                        background-color: #ffa908;
+                                                        width: 200px;
+                                                        height: 40px;
+                                                        align-items: center;
+                                                        border: none;
+                                                        border-radius: 10px;
+                                                    }
+                                                    
+                                                    .projects-button:hover {
+                                                        color: #ffffff;
+                                                        background-color: #ffb223;
+                                                    }
+                                                    
+                                                    .button {
+                                                        margin-left: 0;
+                                                        background-color: #ffa908;
+                                                        width: 200px;
+                                                        height: 38px;
+                                                        align-items: center;
+                                                        border: none;
+                                                    }
+                                                    /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
+                                                    
+                                                    .resp-image {
+                                                        padding-left: 45px;
+                                                        padding-right: 45px;
+                                                        max-width: 100%;
+                                                        height: auto;
+                                                    }
+                                                    
+                                                    ol,
+                                                    ul {
+                                                        padding-left: 1rem;
+                                                    }
+                                                    
+                                                    .bi-chevron-right {
+                                                        font-size: 12px;
+                                                        color: #dadada;
+                                                        margin-right: 5px;
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:530px) {
+                                                        .resp-image {
+                                                            padding-left: 5px;
+                                                            padding-right: 5px;
+                                                            width: 100%;
+                                                            height: auto;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:530px) {
+                                                        .resp-image {
+                                                            padding-left: 5px;
+                                                            padding-right: 5px;
+                                                            width: 100%;
+                                                            height: auto;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:418px) {
+                                                        .averageSuccess {
+                                                            width: 100%;
+                                                            height: auto;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:991px) {
+                                                        .navbar-nav {
+                                                            background-color: #ffffff;
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                    /* FOR ME +++++++++++++++++++++++++++++++++++++++ */
+                                                    /* CONTACT */
+                                                    
+                                                    .navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
+                                                    .navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+                                                        background-color: rgba(255, 0, 0, 0);
+                                                    }
+                                                    
+                                                    .fa-map-marker-alt:hover {
+                                                        color: #ffa908;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .fa-phone:hover {
+                                                        color: #ffa908;
+                                                        cursor: pointer;
+                                                    }
+                                                    
+                                                    .fa-envelope:hover {
+                                                        color: #ffa908;
+                                                        cursor: pointer;
+                                                    }
+                                                    /* CONTACT */
+                                                    
+                                                    @media only screen and (max-width:1245px) {
+                                                        .navigation,
+                                                        .forMe,
+                                                        .services2 {
+                                                            margin-left: 10px;
+                                                        }
+                                                        .txtBox {
+                                                            width: 250px;
+                                                        }
+                                                    }
+                                                    
+                                                    .responsiveFooter {
+                                                        display: none;
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:1135px) {
+                                                        .normal-footer {
+                                                            display: none;
+                                                        }
+                                                        .responsiveFooter {
+                                                            display: block;
+                                                        }
+                                                        footer {
+                                                            height: auto;
+                                                        }
+                                                    }
+                                                    
+                                                    #txtBoxResp {
+                                                        width: 100px;
+                                                    }
+                                                    
+                                                    #services2Resp {
+                                                        margin-left: 30px;
+                                                    }
+                                                    
+                                                    #buttonResp {
+                                                        width: 110px;
+                                                        font-size: 14px;
+                                                    }
+                                                    
+                                                    #forMeResp {
+                                                        margin-right: 80px;
+                                                    }
+                                                    
+                                                    #footer2 {
+                                                        margin-left: 96px;
+                                                    }
+                                                    
+                                                    #respBuletin {
+                                                        margin-left: 120px;
+                                                    }
+                                                    
+                                                    .responsiveFooter {
+                                                        margin-right: 80px;
+                                                    }
+                                                    
+                                                    .responsiveFooter2 {
+                                                        display: none;
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:765px) {
+                                                        .responsiveFooter2 {
+                                                            display: block;
+                                                        }
+                                                        .normal-footer {
+                                                            display: none;
+                                                        }
+                                                        .responsiveFooter {
+                                                            display: none;
+                                                        }
+                                                        footer {
+                                                            height: auto;
+                                                        }
+                                                        #services2Resp {
+                                                            margin: 0;
+                                                        }
+                                                        .services2 {
+                                                            margin: 0;
+                                                        }
+                                                        #footer2 {
+                                                            margin: 0;
+                                                        }
+                                                        #respBuletin {
+                                                            margin: 0;
+                                                            padding-bottom: 20px;
+                                                        }
+                                                        .navigation {
+                                                            margin: 0;
+                                                        }
+                                                        .responsiveFooter2 {
+                                                            margin-left: 100px;
+                                                        }
+                                                        #txtBoxResp {
+                                                            margin: 0;
+                                                            width: 300px;
+                                                            height: 38px;
+                                                            margin-left: 8px;
+                                                        }
+                                                        .buttonResp {
+                                                            margin-left: 0;
+                                                            background-color: #ffa908;
+                                                            width: 200px;
+                                                            height: 40px;
+                                                            align-items: center;
+                                                        }
+                                                        #respBuletin {
+                                                            padding-bottom: 20px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width: 765px) {
+                                                        #respBuletin {
+                                                            margin: 0;
+                                                            padding-bottom: 15px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:640px) {
+                                                        #respBuletin {
+                                                            padding-bottom: 20px;
+                                                        }
+                                                        .normal-footer {
+                                                            display: none;
+                                                        }
+                                                        .responsiveFooter {
+                                                            display: none;
+                                                        }
+                                                        footer {
+                                                            height: auto;
+                                                        }
+                                                        #services2Resp {
+                                                            margin: 0;
+                                                        }
+                                                        .services2 {
+                                                            margin: 0;
+                                                        }
+                                                        #footer2 {
+                                                            margin: 0;
+                                                        }
+                                                        #respBuletin {
+                                                            margin: 0;
+                                                        }
+                                                        .navigation {
+                                                            margin: 0;
+                                                        }
+                                                        .responsiveFooter2 {
+                                                            margin-left: 0px;
+                                                        }
+                                                    }
+                                                    
+                                                    @media only screen and (max-width:430px) {
+                                                        .normal-footer {
+                                                            display: none;
+                                                        }
+                                                        .responsiveFooter {
+                                                            display: none;
+                                                        }
+                                                        #txtBoxResp {
+                                                            width: 195px;
+                                                        }
+                                                    }
+                                                    
+                                                    .etiquetteContainer {
+                                                        display: block;
+                                                    }
+                                                    
+                                                    .newEtiquette {
+                                                        width: 80px;
+                                                        height: 35px;
+                                                        font-size: 22px;
+                                                        background-color: #ffa908;
+                                                        color: white;
+                                                        display: grid;
+                                                        justify-items: center;
+                                                        align-items: center;
+                                                        border-top-left-radius: 10px;
+                                                        border-bottom-right-radius: 10px;
+                                                        animation: Color 4s linear infinite;
+                                                        -webkit-animation: Color 4s ease-in-out infinite;
+                                                    }
+                                                    
+                                                    @keyframes Color {
+                                                        0% {
+                                                            color: #ffffff;
+                                                        }
+                                                        50% {
+                                                            color: #000000;
+                                                        }
+                                                    }
+                                                    
+                                                    @-moz-keyframes Color {
+                                                        0% {
+                                                            color: #ffffff;
+                                                        }
+                                                        50% {
+                                                            color: #000000;
+                                                        }
+                                                    }
+                                                    
+                                                    @-webkit-keyframes Color {
+                                                        0% {
+                                                            color: #ffffff;
+                                                        }
+                                                        50% {
+                                                            color: #000000;
+                                                        }
+                                                    }
